@@ -32,7 +32,7 @@ namespace Model
             var volumes = htmlDoc.GetElementsByClass("volume");
             foreach (var item in volumes)
             {
-                var li = item.GetElementsByClass("cf")[0].GetElementsByTag("li");
+                var li = item.GetElementsByClass("cf")[0].GetElementsByTag("li") ;
                 foreach (var l in li)
                 {
                     bookItems.Add(l.Text());
